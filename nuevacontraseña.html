@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restablecer Contrasena</title>
+</head>
+<body>
+    <h2>Restablecer Contrasena</h2>
+    <form action="update_password.php" method="post">
+        <input type="hidden" name="token" value="<?php echo $_GET['token']; ?>">
+        <label for="usuario">Nombre de Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        <label for="password">Nueva Contrasena:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="confirm_password">Confirmar Contrasena:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+        <input type="submit" value="Actualizar" name="update_password">
+    </form>
+</body>
+</html>

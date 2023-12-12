@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ver Citas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- ICONO -->
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="icon">
+
+  <!-- FUENTES GOOGLE -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- DOCUMENTOS CSSS VENDOR -->
+  <link href="assets/documentos/aos/aos.css" rel="stylesheet">
+  <link href="assets/documentos/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/documentos/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/documentos/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/documentos/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/documentos/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styleLogin.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- DOCUMENTOS CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<body class="body dark-scheme">
+  <!--FIN DE CODIGO-->
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0" nonce="uvuq2VcD"></script>
+
+  <!-- ======= BOTON VERSON MOVIL ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= MUSICA INICIO ======= -->
+  <audio src="musica/navidad.mp3" autoplay="autoplay" loop="loop"></audio>
+  <body>
+    <div class="app">
+      <div class="question">
+        <div>
+          <div style="visibility:hidden">
+            <audio autoplay loop>
+                <source src="musica/Last Christmas.mp3">
+            </audio> 
+        </div>
+
+<!--FIN DE MUSICA-->
+    <div>
+
+  <!-- ======= BOTON VERSION MOVILES ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+
+  <!-- ======= INICIO DE REDES SOCIALES ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="https://th.bing.com/th/id/OIP.OhcoSGNGsTgWweZ176i92QHaGm?rs=1&pid=ImgDetMain" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="#">Ver citas</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="http://dif.ixtlahuaca.gob.mx/" target="_blank"><class="golbe"><i class='bx bx-globe'></i></i></a>
+          <a href="https://www.facebook.com/difixtlahuacamx/" target="_blank"><class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/difixtlahuacamx/" target="_blank"><class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="mailto:difixtlahuaca@difixtlahuaca.com.mx" target="_blank"><class="instagram"><i class='bx bx-envelope'></i></i></a>
+        </div>
+      </div>
+<!--fINAL DE REDES SOCIALES-->
+
+
+<!--BARRA DE NAVEGACION-->
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="InicioAdmin.html" class="nav-link scrollto"><i class='bx bx-arrow-back'></i> <span>volver</span></a></li>
+          <li><a href="citas.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Ver citas</span></a></li>
+          <li><a href="crear_citas.html" class="nav-link scrollto"><i class='bx bx-cloud-upload'></i></i> <span>Crear cita</span></a></li>
+          <li><a href="psicologo.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Psicologos</span></a></li>
+          <li><a href="contacto.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+          <li><a href="index.html" class="nav-link scrollto active"><i class='bx bx-log-out'></i></i> <span>Cerrar sesión</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Ver citas</h2>
+          <ol>
+            <li><a href="InicioAdmin.html">Volver</a></li>
+            <li>Detalles</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+     <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8">
+            <h2 class="form-titulo">Citas</h2>
+            <div class="contenedor-inputs">
+            <form id="buscar-citas-form">
+                <input type="text" id="buscar-nombre" name="nombre" placeholder="Buscar por nombre">
+                <input type="number" id="buscar-clave" name="clave" placeholder="Buscar por clave">
+
+                <input type="submit" value="Buscar">
+                <form action="PHP/citas.php" method="post">
+                  <input type="submit" name="ver" value="Ver citas totales">
+              </form>
+              
+              </form>
+              
+              <div id="resultado-citas"></div>
+              
+              <script>
+                $(document).ready(function() {
+                  $('#buscar-citas-form').submit(function(e) {
+                    e.preventDefault();
+                    $.ajax({
+                      type: 'GET',
+                      url: 'PHP/buscar_citas.php',
+                      data: $(this).serialize(),
+                      success: function(response) {
+                        $('#resultado-citas').html(response);
+                      },
+                      error: function() {
+                        $('#resultado-citas').html('Error en la solicitud AJAX');
+                      }
+                    });
+                  });
+                });
+              </script>
+
+          <div class="col-lg-4">
+            <!-- Aquí estaba la información sobre el libro -->
+            <div class="portfolio-info">
+              <h3>Ingresar datos para crear cita</h3>
+              <ul>
+                <li><strong>Generar cita impresa</strong>: <a href="PHP/generar_pdf.php" target="_blank">presione aquí</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>| TODOS LOS DERECHOS RESERVADOS.</span></strong>
+      </div>
+      <div class="credits">
+        <!-- Holaaaaaaaaaaaaa estos son los créditos -->
+        <!-- -->
+        Desarrollado por <a href="https://www.instagram.com/devmike117/"target="_blank">Miguel GH</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Documentos JS -->
+  <script src="assets/documentos/aos/aos.js"></script>
+  <script src="assets/documentos/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/documentos/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/documentos/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/documentos/php-email-form/validate.js"></script>
+  <script src="assets/documentos/purecounter/purecounter.js"></script>
+  <script src="assets/documentos/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/documentos/typed.js/typed.min.js"></script>
+  <script src="assets/documentos/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Documentos JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
