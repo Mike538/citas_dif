@@ -28,7 +28,7 @@ Sitio web desarrollado en HTML, CSS, JS, PHP, LARAVEL y ORACLE para agendar cita
 
 ## 🔗 Endpoints 🔗
 
-URL: https://sistemadecitasdif.netlify.app/
+URL: https://sistemacitasdif.000webhostapp.com/index.html
 ### **usuarios**
 
 > #### $_REQUEST['httpMethods'] == POST /backend/models/usuarios.php
